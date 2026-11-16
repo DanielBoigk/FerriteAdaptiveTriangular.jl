@@ -1,0 +1,26 @@
+name = "FerriteAdaptiveTriangular"
+uuid = "10e3cd81-921f-451a-a702-c2ffb0ce59e8"
+version = "0.1.0"
+authors = ["Daniel Boigk"]
+
+[deps]
+Ferrite = "c061ca5d-56c9-439f-9c0e-210fe06d3992"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
+
+[compat]
+Ferrite = "1.7"
+LinearAlgebra = "1"
+OrderedCollections = "1, 2"
+Random = "1"
+SparseArrays = "1"
+Test = "1"
+julia = "1.10"
+
+[extras]
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Random", "SparseArrays", "Test"]
